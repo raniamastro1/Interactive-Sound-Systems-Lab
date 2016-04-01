@@ -1,0 +1,30 @@
+Server.default.boot
+(
+r = {
+	{
+	(degree: Array.rand (2,4,6)).play;
+		1.wait
+	}.loop
+}.fork
+)
+r.stop
+
+(
+c = {
+	{
+		(degree: Array.rand (1,3,5)).play;
+		1.wait
+	}.loop
+}.fork
+)
+c.stop
+
+(
+g = {
+	{
+		(degree: Array.rand (3,6,9)).play;
+		1.wait
+	}.loop
+}.fork
+)
+g.stop
